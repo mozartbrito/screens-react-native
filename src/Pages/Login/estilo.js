@@ -31,7 +31,9 @@ const estilo = StyleSheet.create({
         padding: 10,
         marginBottom: 10,
         borderRadius: 7, 
-        textAlign: 'center'
+        textAlign: 'center',
+        alignItems: 'center',
+        justifyContent: 'center'
     },
     textoEntrar: {
         fontWeight: 'bold',
@@ -42,7 +44,10 @@ const estilo = StyleSheet.create({
         marginBottom: 10,
         borderRadius: 7,
         color: '#f7941e',
-        textAlign: 'center'
+        textAlign: 'center',
+        
+        alignItems: 'center',
+        justifyContent: 'center'
     },textoCriar: {
         fontWeight: 'bold',
         color: '#fff'        
