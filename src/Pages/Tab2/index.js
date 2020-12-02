@@ -1,0 +1,1 @@
+export {default as Tab2} from './Inicio'
