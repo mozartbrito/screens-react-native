@@ -28,6 +28,7 @@ const Login = ({navigation}) => {
 
     
 
+
     return(
         <ImageBackground 
         source={require('../../../assets/images/bg-water.jpg')}
@@ -45,6 +46,7 @@ const Login = ({navigation}) => {
                     placeholder="E-mail"
                     style={estilo.input}
                     onChangeText={texto => setEmail(texto)}
+
                 />
                 <TextInput 
                     secureTextEntry={true}
