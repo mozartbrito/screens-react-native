@@ -15,6 +15,7 @@ import {Login} from './src/Pages/Login'
 import {Inicio} from './src/Pages/Inicio'
 import {Tab1} from './src/Pages/Tab1'
 import {Tab2} from './src/Pages/Tab2'
+import { Fragment } from 'react';
 
 const Navegacao = createStackNavigator();
 const NavegacaoTabs = createBottomTabNavigator();
@@ -22,14 +23,28 @@ const NavegacaoDrawer = createDrawerNavigator();
 
 export default function App() {
   return (
+    <Fragment>
+
     <NavigationContainer>
-      <NavegacaoDrawer.Navigator>
-        <NavegacaoDrawer.Screen name="Tab1" component={Tab1} />
-        <NavegacaoDrawer.Screen name="Tab2" component={Tab2} />
-      </NavegacaoDrawer.Navigator>
+      
     
     </NavigationContainer>
 
+    <NavigationContainer>
+    <NavegacaoTabs.Navigator>
+<NavegacaoTabs.Screen name="Tab1" component={Tab1} />
+<NavegacaoTabs.Screen name="Tab2" component={Tab2} />
+<NavegacaoTabs.Screen name="Inicio" component={Inicio} />
+</NavegacaoTabs.Navigator>
+      </NavigationContainer>
+    </Fragment>
+
+    /*
+    https://www.jonataoliveira.com.br/tabbar-personalizada-em-react-native/
+    <NavegacaoDrawer.Navigator>
+        <NavegacaoDrawer.Screen name="Tab1" component={Tab1} />
+        <NavegacaoDrawer.Screen name="Tab2" component={Tab2} />
+      </NavegacaoDrawer.Navigator>*/
 /* <NavegacaoTabs.Navigator>
 <NavegacaoTabs.Screen name="Tab1" component={Tab1} />
 <NavegacaoTabs.Screen name="Tab2" component={Tab2} />
