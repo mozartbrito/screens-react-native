@@ -1,11 +1,15 @@
 import React from 'react';
-import {View, Text} from 'react-native'
+import {View, Text, Button} from 'react-native'
 import estilo from './estilo';
 
-const Tab2 = () => {
+const Tab2 = ({navigation}) => {
     return (
         <View style={estilo.container}>
             <Text>Tab 2</Text>
+            <Button 
+            title="Abrir menu" 
+            onPress={() => navigation.openDrawer()} 
+            />
         </View>
     )
 }

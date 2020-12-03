@@ -1,1 +1,1 @@
-export {default as Tab2} from './Inicio'
+export {default as Tab2} from './Tab2'
